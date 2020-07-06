@@ -1,2 +1,9 @@
-# matv
-現地集合大会用bot
+# 現地集合！
+https://meetatthevenue.amebaownd.com
+Prezent by ねこくん！
+主催:トゥッシィさん
+
+# Staff
+あめみん
+KoU
+うたぼっと
