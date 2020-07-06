@@ -8,7 +8,7 @@ import random
 
 
 bot = commands.Bot(command_prefix='/',help_command=None)
-token = 'NzI5NjMxMDM5ODI3NDc2NTUx.XwL39g.1WQPnKUAbkA4VatPYiU2xqhZlxc'
+token = ''
 
 
 
