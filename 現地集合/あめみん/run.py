@@ -5,13 +5,14 @@ import discord
 import os
 import traceback
 import random
+from Messanger import messager
 
 
 bot = commands.Bot(command_prefix='/',help_command=None)
 token = ''
 
 
-
+bot.load_extension('Messanger')
 
 #エラーを出した時の処理
 @bot.event
