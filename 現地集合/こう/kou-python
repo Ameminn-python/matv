@@ -1,0 +1,29 @@
+import discord
+client = discord.Client()
+import time
+from time import sleep
+import threading
+TOKEN = 'token'
+Test_CHANNEL_ID = 729633482245931029
+#CHANNEL_ID_T =
+#CHANNEL_ID_K =
+#CHANNEL_ID_Ty =
+match_plans = '今日は何時から試合です。よろしくお願いします。'
+fill_in_ID = 'ID記入が済んでない代表者は早く記入してください。'
+match_start = 'もうすぐ試合が始まる時間です。選手の皆様は通話チャンネルで待機してお待ちください。'
+@client.event
+async def on_ready():
+    print('ready')
+    while True:
+        if time.strftime('%d:%H:%M',time.localtime())=='07:14:24':
+            channel = client.get_channel(Test_CHANNEL_ID)
+            await channel.send(match_plans)
+            sleep(60)
+        elif time.strftime('%d:%H:%M',time.localtime())=='07:14:25':
+            channel = client.get_channel(Test_CHANNEL_ID)
+            await channel.send(fill_in_ID)
+            sleep(60)
+        elif time.strftime('%d:%H:%M',time.localtime())=='07:14:26':
+            await channel.send(match_start)
+            sleep(60)
+client.run(TOKEN)
