@@ -6,6 +6,7 @@ import os
 import traceback
 import random
 from Messanger import messager
+from PointcheckerCog import pointcheck
 
 
 bot = commands.Bot(command_prefix='/',help_command=None)
@@ -13,6 +14,7 @@ token = ''
 
 
 bot.load_extension('Messanger')
+bot.load_extension('PointcheckerCog')
 
 #エラーを出した時の処理
 @bot.event
